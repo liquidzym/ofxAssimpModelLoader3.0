@@ -694,7 +694,7 @@ void ofxAssimpModelLoader::draw(ofPolyRenderMode renderType) {
     
     ofPushStyle();
     
-   if(!ofGetGLProgrammableRenderer()){
+   if(!ofIsGLProgrammableRenderer()){
 	#ifndef TARGET_OPENGLES
 		glPushAttrib(GL_ALL_ATTRIB_BITS);
 		glPushClientAttrib(GL_CLIENT_ALL_ATTRIB_BITS);
@@ -770,7 +770,7 @@ void ofxAssimpModelLoader::draw(ofPolyRenderMode renderType) {
     
     ofPopMatrix();
     
-if(!ofGetGLProgrammableRenderer()){
+if(!ofIsGLProgrammableRenderer()){
 	#ifndef TARGET_OPENGLES
 		glPopClientAttrib();
 		glPopAttrib();
