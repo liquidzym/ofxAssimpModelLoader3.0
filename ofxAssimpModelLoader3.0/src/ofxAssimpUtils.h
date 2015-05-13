@@ -88,7 +88,6 @@ static void aiMeshToOfMesh(const aiMesh* aim, ofMesh& ofm, ofxAssimpMeshHelper *
 		}
 	}
     
-	ofm.setName(string(aim->mName.data));
 }
 
 //--------------------------------------------------------------
